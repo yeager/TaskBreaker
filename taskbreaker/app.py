@@ -62,7 +62,7 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
         self.entry.connect("activate", self._on_add_task)
         input_box.append(self.entry)
 
-        add_btn = Gtk.Button(label=_("Bryt ner!")
+        add_btn = Gtk.Button(label=_("Break it down!")
         add_btn.add_css_class("suggested-action")
         add_btn.connect("clicked", self._on_add_task)
         input_box.append(add_btn)

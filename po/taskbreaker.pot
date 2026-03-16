@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taskbreaker\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 16:03+0100\n"
+"POT-Creation-Date: 2026-03-16 20:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid "E.g. cleaning the room, studying for the exam."
 msgstr ""
 
 #: taskbreaker/app.py:65
-msgid "Bryt ner!"
+msgid "Break it down!"
 msgstr ""
 
 #: taskbreaker/app.py:155
