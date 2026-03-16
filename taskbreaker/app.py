@@ -57,7 +57,7 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
         input_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
 
         self.entry = Gtk.Entry()
-        self.entry.set_placeholder_text(_("T.ex. städa rummet, plugga till provet...")
+        self.entry.set_placeholder_text(_("E.g. cleaning the room, studying for the exam.")
         self.entry.set_hexpand(True)
         self.entry.connect("activate", self._on_add_task)
         input_box.append(self.entry)
@@ -152,7 +152,7 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
             self.tasks_box.remove(child)
 
         if not self.tasks:
-            empty = Gtk.Label(label=_("Inga uppgifter ännu.\nLägg till en ovan!")
+            empty = Gtk.Label(label=_("No details yet.\nAdd one above!")
             empty.add_css_class("dim-label")
             empty.set_margin_top(40)
             self.tasks_box.append(empty)
