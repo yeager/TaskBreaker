@@ -30,7 +30,7 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
         header = Adw.HeaderBar()
         header.set_title_widget(Gtk.Label(label=_("TaskBreaker"))
 
-        clear_btn = Gtk.Button(label=_("Rensa allt")
+        clear_btn = Gtk.Button(label=_("Clear All")
         clear_btn.add_css_class("destructive-action")
         clear_btn.connect("clicked", self._on_clear_all)
         header.pack_end(clear_btn)
