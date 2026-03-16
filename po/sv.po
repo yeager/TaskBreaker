@@ -31,3 +31,6 @@ msgstr "T.ex. städa rummet, plugga till provet..."
 msgid "TaskBreaker"
 msgstr "TaskBreaker"
 
+
+msgid "Write in a task that feels big.\nI'll break it down for you!"
+msgstr "Skriv in en uppgift som känns stor.\nJag bryter ner den åt dig!"

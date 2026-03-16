@@ -6,15 +6,15 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: taskbreaker 0.1.0\n"
+"Project-Id-Version: taskbreaker\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 12:47+0100\n"
+"POT-Creation-Date: 2026-03-16 16:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: taskbreaker/app.py:31
@@ -27,8 +27,8 @@ msgstr ""
 
 #: taskbreaker/app.py:49
 msgid ""
-"Skriv in en uppgift som känns stor.\n"
-"Jag bryter ner den åt dig!"
+"Write in a task that feels big.\n"
+"I'll break it down for you!"
 msgstr ""
 
 #: taskbreaker/app.py:60

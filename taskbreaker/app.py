@@ -46,7 +46,7 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
 
         # Välkomsttext
         welcome = Gtk.Label(
-            label=_("Skriv in en uppgift som känns stor.\nJag bryter ner den åt dig!"
+            label=_("Write in a task that feels big.\nI'll break it down for you!"
         )
         welcome.add_css_class("dim-label")
         welcome.set_wrap(True)
