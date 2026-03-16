@@ -3,6 +3,7 @@
 import sys
 
 import gi
+from taskbreaker.i18n import _
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
@@ -27,9 +28,9 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
 
         # Headerbar
         header = Adw.HeaderBar()
-        header.set_title_widget(Gtk.Label(label="TaskBreaker"))
+        header.set_title_widget(Gtk.Label(label=_("TaskBreaker"))
 
-        clear_btn = Gtk.Button(label="Rensa allt")
+        clear_btn = Gtk.Button(label=_("Rensa allt")
         clear_btn.add_css_class("destructive-action")
         clear_btn.connect("clicked", self._on_clear_all)
         header.pack_end(clear_btn)
@@ -45,7 +46,7 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
 
         # Välkomsttext
         welcome = Gtk.Label(
-            label="Skriv in en uppgift som känns stor.\nJag bryter ner den åt dig!"
+            label=_("Skriv in en uppgift som känns stor.\nJag bryter ner den åt dig!"
         )
         welcome.add_css_class("dim-label")
         welcome.set_wrap(True)
@@ -56,12 +57,12 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
         input_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
 
         self.entry = Gtk.Entry()
-        self.entry.set_placeholder_text("T.ex. städa rummet, plugga till provet...")
+        self.entry.set_placeholder_text(_("T.ex. städa rummet, plugga till provet...")
         self.entry.set_hexpand(True)
         self.entry.connect("activate", self._on_add_task)
         input_box.append(self.entry)
 
-        add_btn = Gtk.Button(label="Bryt ner!")
+        add_btn = Gtk.Button(label=_("Bryt ner!")
         add_btn.add_css_class("suggested-action")
         add_btn.connect("clicked", self._on_add_task)
         input_box.append(add_btn)
@@ -151,7 +152,7 @@ class TaskBreakerWindow(Adw.ApplicationWindow):
             self.tasks_box.remove(child)
 
         if not self.tasks:
-            empty = Gtk.Label(label="Inga uppgifter ännu.\nLägg till en ovan!")
+            empty = Gtk.Label(label=_("Inga uppgifter ännu.\nLägg till en ovan!")
             empty.add_css_class("dim-label")
             empty.set_margin_top(40)
             self.tasks_box.append(empty)

@@ -1,3 +1,4 @@
+from taskbreaker.i18n import _
 """Regelbaserad nedbrytning av uppgifter till mikrosteg."""
 
 # Nyckelord → steg-mallar för vanliga uppgifter

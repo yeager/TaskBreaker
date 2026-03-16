@@ -2,6 +2,7 @@
 
 import json
 import os
+from taskbreaker.i18n import _
 
 DATA_DIR = os.path.join(os.path.expanduser("~"), ".local", "share", "taskbreaker")
 DATA_FILE = os.path.join(DATA_DIR, "tasks.json")
